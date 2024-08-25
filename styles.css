@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 100vw; /* Evita que el contenedor se extienda más allá del viewport */
+    height: auto;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+video {
+    width: 100%;
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 8px;
+    display: block; /* Elimina espacios en blanco debajo del video */
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
